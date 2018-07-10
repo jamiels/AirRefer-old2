@@ -1,8 +1,0 @@
-run
-exit
-clean
-run
-run 80
-dir
-exit
-run
