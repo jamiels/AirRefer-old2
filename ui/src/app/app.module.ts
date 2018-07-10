@@ -78,6 +78,10 @@ import { DashboardModule } from './dashboard/dashboard.module';
 //Dashboards - Optional
 import { ExecutiveDashboardComponent } from './dashboard/dashboard.component';
 
+// Market
+import { MarketComponent } from './market/market.component';
+import { MarketModule } from './market/market.module';
+
 //Sample Blank Pages - Optional
 import { BlankCorporateComponent } from './@pages/layouts/blank-corporate/blank-corporate.component';
 import { BlankSimplywhiteComponent } from './@pages/layouts/blank-simplywhite/blank-simplywhite.component';
@@ -112,7 +116,7 @@ export class AppHammerConfig extends HammerGestureConfig  {
     ExecutiveDashboardComponent,
     BlankCorporateComponent,
     BlankSimplywhiteComponent,
-    BlankCasualComponent,
+    BlankCasualComponent
   ],
   imports: [
     BrowserModule,
@@ -145,6 +149,7 @@ export class AppHammerConfig extends HammerGestureConfig  {
     QuillModule,
     PerfectScrollbarModule,
     pgSwitchModule,
+    MarketModule,
     DashboardModule
   ],
   providers: [QuickviewService,pagesToggleService,ChartService,SocialService,{
